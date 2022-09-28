@@ -19,6 +19,7 @@ message Room {
   string metadata = 8;
   uint32 num_participants = 9;
   bool active_recording = 10;
+  uint32 room_timeout = 11;
 }
 
 // room info that should not be returned to clients
