@@ -60,6 +60,8 @@ message CreateRoomRequest {
   string metadata = 5;
   // egress
   RoomEgress egress = 6;
+  // number of seconds until the room will terminate, 0 is no timeout
+  uint32 room_timeout = 7;
 }
 
 message RoomEgress {
